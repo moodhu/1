@@ -1,0 +1,25 @@
+import random
+
+def word_scramble_game():
+words = ["python", "java", "ruby", "javascript", "html", "css", "php", "swift"]
+random.shuffle(words) # Shuffle the words to avoid repetition
+score = 0
+
+print("Welcome to the Word Scramble Game!")
+
+for word in words:
+scrambled_word = list(word)
+random.shuffle(scrambled_word)
+scrambled_word = ''.join(scrambled_word)
+print("Your scrambled word is:", scrambled_word)
+
+guess = input("What is the word? ").lower()
+if guess == word:
+print("Correct!")
+score += 1
+else:
+print("Wrong! The word is:", word)
+
+print("Game over! Your final score is:", score)
+
+word_scramble_game()
