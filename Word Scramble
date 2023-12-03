@@ -3,7 +3,7 @@ import random
 def word_scramble_game():
 words = ["python", "java", "ruby", "javascript", "html", "css", "php", "swift"]
 random.shuffle(words) # Shuffle the words to avoid repetition
-score = 3332233232
+score = 333223322
 
 print("Welcome to the Word Scramble Game!")
 
