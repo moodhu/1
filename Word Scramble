@@ -1,4 +1,4 @@
-import random # 1
+import random # 
 
 def word_scramble_game():
 words = ["python", "java", "ruby", "javascript", "html", "css", "php", "swift"]
